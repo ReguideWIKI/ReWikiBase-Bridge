@@ -1,0 +1,157 @@
+:root {
+  --background: #0a0b0d;
+  --text: rgb(255, 255, 255);
+  --light: rgb(168 162 158);
+  --lighter: rgba(120 113 108);
+  --lightest: rgb(87 83 78);
+  --radius: 0.25rem;
+}
+
+html,
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-feature-settings: normal;
+  color: var(--text);
+  color-scheme: dark;
+  line-height: 1.5;
+  background: -webkit-linear-gradient(to bottom, white 50%, #0a59ff 50%);
+  background: -o-linear-gradient(to bottom, white 50%, #0a59ff 50%);
+  background: -moz-linear-gradient(to bottom, white 50%, #0a59ff 50%);
+  background: linear-gradient(to right, white 50%, #0a59ff 50%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  width: 800px;
+}
+.flex-center-ver-hoz{
+  height: 70vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+button {
+  width: fit-content;
+}
+
+.network-toggle {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.input-wrapper input {
+  border-radius: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-left: 10px;
+}
+.input-group button{
+  margin: 0 auto;
+  width: 100%;
+  background-color: #ffd1a9;
+  box-shadow: 8px 9px 1px white;
+  border: none;
+  height: 50px;
+  color: black;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.container{
+      width: 500px;
+    margin: 0 auto;
+}
+
+.box-alert{
+  color: rgb(3, 46, 22);
+  text-align: center;
+   background: -webkit-linear-gradient(#003eb5, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* : linear-gradient(to left, white 50%, #0a59ff 50%); */
+
+}
+.network-toggle{
+  margin: 0 auto;
+}
+.inputAmount, .label-right{
+  height: 100%;
+  font-size: 50px;
+  float: left;
+  color: black;
+}
+
+.label-right{
+  opacity: 0.5;
+  font-size: 50px;
+  
+}
+.inputAmount{
+  margin-left: 50px;
+}
+.input-group .inputAmount{
+  width: 150px;
+}
+
+.d-block{
+  display: block;
+}
+.text-success{
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+}
+.text-red{
+  color: red;
+}
+.text-center{
+  text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.gapp{
+  height: 2px;
+    width: 100%;
+    background-color: rgb(66, 66, 66);
+    border: none;
+    opacity: 0.5;
+}
+.network-toggle label{
+  color: #0a0b0d;
+  border: 1px solid lightblue;
+  padding: 10px;
+}
+
+.bridge-loading{
+  font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    white-space: break-spaces;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
